@@ -11,9 +11,9 @@ Dependencies: folium (python implementation of leaflet.js)
 5. Use the following format: *latitude*, *longitude*, *(glyph)icon*, *marker color*, *title (in double quotes)*
 Example for Lisbon below:
 
-`38.691659, -9.216031, tower, red, "Torre de Belém"
-38.715619, -9.137032, road, red, "Tram 28"
-38.712049, -9.131531, picture, purple, "Alfama District"`
+`38.691659, -9.216031, tower, red, "Torre de Belém"`
+`38.715619, -9.137032, road, red, "Tram 28"`
+`38.712049, -9.131531, picture, purple, "Alfama District"`
 
 The available (glyph)icons are listed here: https://getbootstrap.com/docs/3.3/components/#glyphicons-glyphs
 
