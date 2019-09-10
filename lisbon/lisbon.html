@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5751623452034b6b8fe2ea76163247e5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5751623452034b6b8fe2ea76163247e5" ></div>
+        
+</body>
+<script>    
+    
+            var map_5751623452034b6b8fe2ea76163247e5 = L.map(
+                "map_5751623452034b6b8fe2ea76163247e5",
+                {
+                    center: [38.716964, -9.144463],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8d71d097ca804b429474cd1aef074677 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var marker_fa25c67233aa4096b6da4dd9c9e406fb = L.marker(
+                [38.716964, -9.144463],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_e7c9dd0ad44c45589abd86be59de2665 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fa25c67233aa4096b6da4dd9c9e406fb.setIcon(icon_e7c9dd0ad44c45589abd86be59de2665);
+        
+    
+        var popup_5b02eabc6c0c4c7abd455b74fbdb7d80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_000d42e0829f4feb807918b5d45117de = $(`<div id="html_000d42e0829f4feb807918b5d45117de" style="width: 100.0%; height: 100.0%;">Airbnb</div>`)[0];
+            popup_5b02eabc6c0c4c7abd455b74fbdb7d80.setContent(html_000d42e0829f4feb807918b5d45117de);
+        
+
+        marker_fa25c67233aa4096b6da4dd9c9e406fb.bindPopup(popup_5b02eabc6c0c4c7abd455b74fbdb7d80)
+        ;
+
+        
+    
+    
+            marker_fa25c67233aa4096b6da4dd9c9e406fb.bindTooltip(
+                `<div>
+                     Airbnb
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98536c4561644500a2ffca1ed96b0dc5 = L.marker(
+                [38.691659, -9.216031],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_6f69331c8352418b962cdf833ab56c8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tower", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_98536c4561644500a2ffca1ed96b0dc5.setIcon(icon_6f69331c8352418b962cdf833ab56c8b);
+        
+    
+        var popup_6734225a27414affa17b79bcc846defc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb262b45434f440c855a18836d398dea = $(`<div id="html_fb262b45434f440c855a18836d398dea" style="width: 100.0%; height: 100.0%;">Torre de Belém</div>`)[0];
+            popup_6734225a27414affa17b79bcc846defc.setContent(html_fb262b45434f440c855a18836d398dea);
+        
+
+        marker_98536c4561644500a2ffca1ed96b0dc5.bindPopup(popup_6734225a27414affa17b79bcc846defc)
+        ;
+
+        
+    
+    
+            marker_98536c4561644500a2ffca1ed96b0dc5.bindTooltip(
+                `<div>
+                     Torre de Belém
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4858245e4af4ac792820b4d5eac4575 = L.marker(
+                [38.715619, -9.137032],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_5f17c9b7801448bea1bb65df24f87c09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c4858245e4af4ac792820b4d5eac4575.setIcon(icon_5f17c9b7801448bea1bb65df24f87c09);
+        
+    
+        var popup_c09bc0ef1d0e402f98d75295f7029091 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9ab0ba4fa08492daeb07430f0d713a5 = $(`<div id="html_c9ab0ba4fa08492daeb07430f0d713a5" style="width: 100.0%; height: 100.0%;">Tram 28</div>`)[0];
+            popup_c09bc0ef1d0e402f98d75295f7029091.setContent(html_c9ab0ba4fa08492daeb07430f0d713a5);
+        
+
+        marker_c4858245e4af4ac792820b4d5eac4575.bindPopup(popup_c09bc0ef1d0e402f98d75295f7029091)
+        ;
+
+        
+    
+    
+            marker_c4858245e4af4ac792820b4d5eac4575.bindTooltip(
+                `<div>
+                     Tram 28
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_445ec79d729c4064811afb88fbf81a14 = L.marker(
+                [38.712049, -9.131531],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_1da1b9bd5e2b46c09077bfbb9c07726c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "picture", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_445ec79d729c4064811afb88fbf81a14.setIcon(icon_1da1b9bd5e2b46c09077bfbb9c07726c);
+        
+    
+        var popup_0a968bb2a3714a43b161636bcb755731 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4a4305b26bc4e908a00e53fb5f3c64c = $(`<div id="html_e4a4305b26bc4e908a00e53fb5f3c64c" style="width: 100.0%; height: 100.0%;">Alfama District</div>`)[0];
+            popup_0a968bb2a3714a43b161636bcb755731.setContent(html_e4a4305b26bc4e908a00e53fb5f3c64c);
+        
+
+        marker_445ec79d729c4064811afb88fbf81a14.bindPopup(popup_0a968bb2a3714a43b161636bcb755731)
+        ;
+
+        
+    
+    
+            marker_445ec79d729c4064811afb88fbf81a14.bindTooltip(
+                `<div>
+                     Alfama District
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_959e6b4907994fe394d2e5f09a718f58 = L.marker(
+                [38.79411, -9.390462],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_909592e8bddc4b0a9bb17697ebbfcb3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "picture", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_959e6b4907994fe394d2e5f09a718f58.setIcon(icon_909592e8bddc4b0a9bb17697ebbfcb3b);
+        
+    
+        var popup_173e182ecf1c43128d94fd93aed60830 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86c4346cea1c467a854ad256e4e24cd4 = $(`<div id="html_86c4346cea1c467a854ad256e4e24cd4" style="width: 100.0%; height: 100.0%;">Sintra (daytrip)</div>`)[0];
+            popup_173e182ecf1c43128d94fd93aed60830.setContent(html_86c4346cea1c467a854ad256e4e24cd4);
+        
+
+        marker_959e6b4907994fe394d2e5f09a718f58.bindPopup(popup_173e182ecf1c43128d94fd93aed60830)
+        ;
+
+        
+    
+    
+            marker_959e6b4907994fe394d2e5f09a718f58.bindTooltip(
+                `<div>
+                     Sintra (daytrip)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a32c21da82444491b9bde334a17ac2df = L.marker(
+                [38.7139, -9.133493],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_e55da1064d9c41c69ce16f83c2ac0c1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a32c21da82444491b9bde334a17ac2df.setIcon(icon_e55da1064d9c41c69ce16f83c2ac0c1c);
+        
+    
+        var popup_e8c4b8acc5824aacb26951e3d8f392d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e970f7764a7d484b92864fe57c49bad7 = $(`<div id="html_e970f7764a7d484b92864fe57c49bad7" style="width: 100.0%; height: 100.0%;">Castello de São Jorge</div>`)[0];
+            popup_e8c4b8acc5824aacb26951e3d8f392d7.setContent(html_e970f7764a7d484b92864fe57c49bad7);
+        
+
+        marker_a32c21da82444491b9bde334a17ac2df.bindPopup(popup_e8c4b8acc5824aacb26951e3d8f392d7)
+        ;
+
+        
+    
+    
+            marker_a32c21da82444491b9bde334a17ac2df.bindTooltip(
+                `<div>
+                     Castello de São Jorge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cb6869fef16470daa504054b3e9d084 = L.marker(
+                [38.697927, -9.206668],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_e0cd016ee7ca4b77b0a19b8293f90f9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5cb6869fef16470daa504054b3e9d084.setIcon(icon_e0cd016ee7ca4b77b0a19b8293f90f9c);
+        
+    
+        var popup_b7ec17c48f6b440eba977258423bfd6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26c11f07a8a746859d53af601da2ceb5 = $(`<div id="html_26c11f07a8a746859d53af601da2ceb5" style="width: 100.0%; height: 100.0%;">Mosteiro dos Jerónimos</div>`)[0];
+            popup_b7ec17c48f6b440eba977258423bfd6d.setContent(html_26c11f07a8a746859d53af601da2ceb5);
+        
+
+        marker_5cb6869fef16470daa504054b3e9d084.bindPopup(popup_b7ec17c48f6b440eba977258423bfd6d)
+        ;
+
+        
+    
+    
+            marker_5cb6869fef16470daa504054b3e9d084.bindTooltip(
+                `<div>
+                     Mosteiro dos Jerónimos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4aa54af6c78c455a9f6ab7aa8f445aba = L.marker(
+                [38.707104, -9.145852],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_47c75e27266443cbaa1145fc322bb352 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4aa54af6c78c455a9f6ab7aa8f445aba.setIcon(icon_47c75e27266443cbaa1145fc322bb352);
+        
+    
+        var popup_310b9c9edb2c4ee8b600d3ce6dc07d29 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c5bf54ec3164b47a13c4204323fedb7 = $(`<div id="html_6c5bf54ec3164b47a13c4204323fedb7" style="width: 100.0%; height: 100.0%;">Mercado da Ribeira</div>`)[0];
+            popup_310b9c9edb2c4ee8b600d3ce6dc07d29.setContent(html_6c5bf54ec3164b47a13c4204323fedb7);
+        
+
+        marker_4aa54af6c78c455a9f6ab7aa8f445aba.bindPopup(popup_310b9c9edb2c4ee8b600d3ce6dc07d29)
+        ;
+
+        
+    
+    
+            marker_4aa54af6c78c455a9f6ab7aa8f445aba.bindTooltip(
+                `<div>
+                     Mercado da Ribeira
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9348a17d6bb14c9886eb26560e14bf6f = L.marker(
+                [38.771815, -9.129656],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_f401a6c465b1427a812b302134a85e1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_9348a17d6bb14c9886eb26560e14bf6f.setIcon(icon_f401a6c465b1427a812b302134a85e1a);
+        
+    
+        var popup_6569dda07ef24c7fa5999f949cc1f324 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6c3ed3897214807b7ce0b23fb0b8cdb = $(`<div id="html_e6c3ed3897214807b7ce0b23fb0b8cdb" style="width: 100.0%; height: 100.0%;">Lisbon Airport</div>`)[0];
+            popup_6569dda07ef24c7fa5999f949cc1f324.setContent(html_e6c3ed3897214807b7ce0b23fb0b8cdb);
+        
+
+        marker_9348a17d6bb14c9886eb26560e14bf6f.bindPopup(popup_6569dda07ef24c7fa5999f949cc1f324)
+        ;
+
+        
+    
+    
+            marker_9348a17d6bb14c9886eb26560e14bf6f.bindTooltip(
+                `<div>
+                     Lisbon Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f3a8f4d95de4eacbae84f01405ed7c4 = L.marker(
+                [38.713868, -9.139365],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_cb689c15f815456ba2afd850c70911a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f3a8f4d95de4eacbae84f01405ed7c4.setIcon(icon_cb689c15f815456ba2afd850c70911a5);
+        
+    
+        var popup_a86d48cf89714fddae81d5e9a6570700 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31cc20350fa74a32b7517ec64b86ad73 = $(`<div id="html_31cc20350fa74a32b7517ec64b86ad73" style="width: 100.0%; height: 100.0%;">Praca do Rossio</div>`)[0];
+            popup_a86d48cf89714fddae81d5e9a6570700.setContent(html_31cc20350fa74a32b7517ec64b86ad73);
+        
+
+        marker_3f3a8f4d95de4eacbae84f01405ed7c4.bindPopup(popup_a86d48cf89714fddae81d5e9a6570700)
+        ;
+
+        
+    
+    
+            marker_3f3a8f4d95de4eacbae84f01405ed7c4.bindTooltip(
+                `<div>
+                     Praca do Rossio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b526fe44e05448d9dd1c2d1457f9626 = L.marker(
+                [38.713172, -9.14553],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_cf893d1291374a3a9111f58ef9ac58ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "picture", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_6b526fe44e05448d9dd1c2d1457f9626.setIcon(icon_cf893d1291374a3a9111f58ef9ac58ae);
+        
+    
+        var popup_29fd21a7c8964a6486e4ac3b4e49905c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_115625812e7a47069df61b6c8970cf94 = $(`<div id="html_115625812e7a47069df61b6c8970cf94" style="width: 100.0%; height: 100.0%;">Bairro Alto District (nightlife)</div>`)[0];
+            popup_29fd21a7c8964a6486e4ac3b4e49905c.setContent(html_115625812e7a47069df61b6c8970cf94);
+        
+
+        marker_6b526fe44e05448d9dd1c2d1457f9626.bindPopup(popup_29fd21a7c8964a6486e4ac3b4e49905c)
+        ;
+
+        
+    
+    
+            marker_6b526fe44e05448d9dd1c2d1457f9626.bindTooltip(
+                `<div>
+                     Bairro Alto District (nightlife)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8578a31044f24a25a63c2f8e8c5d1a28 = L.marker(
+                [38.697114, -9.422133],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_9cf5c0ce5afb4abe97985a79ffd3d15e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "picture", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_8578a31044f24a25a63c2f8e8c5d1a28.setIcon(icon_9cf5c0ce5afb4abe97985a79ffd3d15e);
+        
+    
+        var popup_ea48d2a3fb9540abb7102ea0c87f6775 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca6ebef373a249e5818833fc0a1c6fd9 = $(`<div id="html_ca6ebef373a249e5818833fc0a1c6fd9" style="width: 100.0%; height: 100.0%;">Cascais (daytrip with Sintra)</div>`)[0];
+            popup_ea48d2a3fb9540abb7102ea0c87f6775.setContent(html_ca6ebef373a249e5818833fc0a1c6fd9);
+        
+
+        marker_8578a31044f24a25a63c2f8e8c5d1a28.bindPopup(popup_ea48d2a3fb9540abb7102ea0c87f6775)
+        ;
+
+        
+    
+    
+            marker_8578a31044f24a25a63c2f8e8c5d1a28.bindTooltip(
+                `<div>
+                     Cascais (daytrip with Sintra)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fc04baec12b4b87b4edfff156d0f399 = L.marker(
+                [38.724667, -9.113769],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_9b8ebf36006c4925b733359e7cee1fd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4fc04baec12b4b87b4edfff156d0f399.setIcon(icon_9b8ebf36006c4925b733359e7cee1fd2);
+        
+    
+        var popup_c656522979dc4c7b9ac3ba362853ff19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b02b029c9e448a29f388483bc9b9e28 = $(`<div id="html_3b02b029c9e448a29f388483bc9b9e28" style="width: 100.0%; height: 100.0%;">Museu Nacional do Azulejo</div>`)[0];
+            popup_c656522979dc4c7b9ac3ba362853ff19.setContent(html_3b02b029c9e448a29f388483bc9b9e28);
+        
+
+        marker_4fc04baec12b4b87b4edfff156d0f399.bindPopup(popup_c656522979dc4c7b9ac3ba362853ff19)
+        ;
+
+        
+    
+    
+            marker_4fc04baec12b4b87b4edfff156d0f399.bindTooltip(
+                `<div>
+                     Museu Nacional do Azulejo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34acf52f66334e6482d23f516130f056 = L.marker(
+                [38.752657, -9.184702],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_dc7b3cc81c164c069316a53a78828038 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "sound-dolby", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34acf52f66334e6482d23f516130f056.setIcon(icon_dc7b3cc81c164c069316a53a78828038);
+        
+    
+        var popup_48b52dccdf724036b2590076ec0c152a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4d91e6552de4a7897ac48b91fd5fb87 = $(`<div id="html_b4d91e6552de4a7897ac48b91fd5fb87" style="width: 100.0%; height: 100.0%;">Estádio da Luz</div>`)[0];
+            popup_48b52dccdf724036b2590076ec0c152a.setContent(html_b4d91e6552de4a7897ac48b91fd5fb87);
+        
+
+        marker_34acf52f66334e6482d23f516130f056.bindPopup(popup_48b52dccdf724036b2590076ec0c152a)
+        ;
+
+        
+    
+    
+            marker_34acf52f66334e6482d23f516130f056.bindTooltip(
+                `<div>
+                     Estádio da Luz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb90f69b902047dda27b7dcf1f286a2a = L.marker(
+                [38.707548, -9.136471],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_8fbce8d458a1489bba293702098099a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb90f69b902047dda27b7dcf1f286a2a.setIcon(icon_8fbce8d458a1489bba293702098099a7);
+        
+    
+        var popup_01a078fefa7a4f59b94d5d19227484cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb5cd6e7e69c400489555f875e9dde5c = $(`<div id="html_cb5cd6e7e69c400489555f875e9dde5c" style="width: 100.0%; height: 100.0%;">Praca do Comércio</div>`)[0];
+            popup_01a078fefa7a4f59b94d5d19227484cb.setContent(html_cb5cd6e7e69c400489555f875e9dde5c);
+        
+
+        marker_eb90f69b902047dda27b7dcf1f286a2a.bindPopup(popup_01a078fefa7a4f59b94d5d19227484cb)
+        ;
+
+        
+    
+    
+            marker_eb90f69b902047dda27b7dcf1f286a2a.bindTooltip(
+                `<div>
+                     Praca do Comércio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2216d35e075545a89f2008a788df4827 = L.marker(
+                [38.719284, -9.132908],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_25d91b39c5ca4c4f95902a71aa62c476 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "globe", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_2216d35e075545a89f2008a788df4827.setIcon(icon_25d91b39c5ca4c4f95902a71aa62c476);
+        
+    
+        var popup_96a461f3a17846e98a8b0c1ed96ec0ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efa0434b3d5d48ecba203c2905c8fc53 = $(`<div id="html_efa0434b3d5d48ecba203c2905c8fc53" style="width: 100.0%; height: 100.0%;">Misadouro da Senhora do Monte (observation deck)</div>`)[0];
+            popup_96a461f3a17846e98a8b0c1ed96ec0ab.setContent(html_efa0434b3d5d48ecba203c2905c8fc53);
+        
+
+        marker_2216d35e075545a89f2008a788df4827.bindPopup(popup_96a461f3a17846e98a8b0c1ed96ec0ab)
+        ;
+
+        
+    
+    
+            marker_2216d35e075545a89f2008a788df4827.bindTooltip(
+                `<div>
+                     Misadouro da Senhora do Monte (observation deck)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7933228470ac470b88c5dc3208fde537 = L.marker(
+                [38.710519, -9.14218],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_4aa3e7593acb4b8f8192ae8fea2c4435 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "euro", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_7933228470ac470b88c5dc3208fde537.setIcon(icon_4aa3e7593acb4b8f8192ae8fea2c4435);
+        
+    
+        var popup_6d6bd609198845f280039963a86550f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c22e2ba763e43f5b19d6a7591bc559e = $(`<div id="html_1c22e2ba763e43f5b19d6a7591bc559e" style="width: 100.0%; height: 100.0%;">Chiado (shopping disctrict)</div>`)[0];
+            popup_6d6bd609198845f280039963a86550f4.setContent(html_1c22e2ba763e43f5b19d6a7591bc559e);
+        
+
+        marker_7933228470ac470b88c5dc3208fde537.bindPopup(popup_6d6bd609198845f280039963a86550f4)
+        ;
+
+        
+    
+    
+            marker_7933228470ac470b88c5dc3208fde537.bindTooltip(
+                `<div>
+                     Chiado (shopping disctrict)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1762e516073b46f687c80f1499338a9f = L.marker(
+                [38.716354, -9.131523],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_7afa62fe95464ecd8b2ebd9a7c314dad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "globe", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_1762e516073b46f687c80f1499338a9f.setIcon(icon_7afa62fe95464ecd8b2ebd9a7c314dad);
+        
+    
+        var popup_517c8848a62343b5ae6a6df56aec4487 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04458fa17cf44dcc8504574b6ba8c2ee = $(`<div id="html_04458fa17cf44dcc8504574b6ba8c2ee" style="width: 100.0%; height: 100.0%;">Miradouro da Graca</div>`)[0];
+            popup_517c8848a62343b5ae6a6df56aec4487.setContent(html_04458fa17cf44dcc8504574b6ba8c2ee);
+        
+
+        marker_1762e516073b46f687c80f1499338a9f.bindPopup(popup_517c8848a62343b5ae6a6df56aec4487)
+        ;
+
+        
+    
+    
+            marker_1762e516073b46f687c80f1499338a9f.bindTooltip(
+                `<div>
+                     Miradouro da Graca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1022d302cee429cbdc99583af633ab0 = L.marker(
+                [38.702008, -9.178397],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_2d1a23bfdbe84983a8d3ec8ca4b9679a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a1022d302cee429cbdc99583af633ab0.setIcon(icon_2d1a23bfdbe84983a8d3ec8ca4b9679a);
+        
+    
+        var popup_5f0737d85d2443278eb8d0ba0a79148f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_042fbaa3d564494bbddd641418b1414c = $(`<div id="html_042fbaa3d564494bbddd641418b1414c" style="width: 100.0%; height: 100.0%;">LX Factory (old factory now trendy shopping & dining)</div>`)[0];
+            popup_5f0737d85d2443278eb8d0ba0a79148f.setContent(html_042fbaa3d564494bbddd641418b1414c);
+        
+
+        marker_a1022d302cee429cbdc99583af633ab0.bindPopup(popup_5f0737d85d2443278eb8d0ba0a79148f)
+        ;
+
+        
+    
+    
+            marker_a1022d302cee429cbdc99583af633ab0.bindTooltip(
+                `<div>
+                     LX Factory (old factory now trendy shopping & dining)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14c0039bc03049c9909393aebdcdd645 = L.marker(
+                [38.767189, -9.095291],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_5ef0f26adfd745e5be0fc1928f48a196 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "picture", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_14c0039bc03049c9909393aebdcdd645.setIcon(icon_5ef0f26adfd745e5be0fc1928f48a196);
+        
+    
+        var popup_b7468da6bfad48f8b3c30a5fdae745e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fecc6decf56d4cdb9f5e79765341e946 = $(`<div id="html_fecc6decf56d4cdb9f5e79765341e946" style="width: 100.0%; height: 100.0%;">Parque das Nacoes (very modern district)</div>`)[0];
+            popup_b7468da6bfad48f8b3c30a5fdae745e3.setContent(html_fecc6decf56d4cdb9f5e79765341e946);
+        
+
+        marker_14c0039bc03049c9909393aebdcdd645.bindPopup(popup_b7468da6bfad48f8b3c30a5fdae745e3)
+        ;
+
+        
+    
+    
+            marker_14c0039bc03049c9909393aebdcdd645.bindTooltip(
+                `<div>
+                     Parque das Nacoes (very modern district)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e8745a792b24d2bb98192fc789bad46 = L.marker(
+                [38.693703, -9.205788],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_67921072b8064ef08b30ecf79c9476b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0e8745a792b24d2bb98192fc789bad46.setIcon(icon_67921072b8064ef08b30ecf79c9476b9);
+        
+    
+        var popup_2e79bc1b5862480bbf299084fd63711a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98edea02359242a69ed32bee2964fe2c = $(`<div id="html_98edea02359242a69ed32bee2964fe2c" style="width: 100.0%; height: 100.0%;">Padrao dos Descobrimentos (monument to the discoveries)</div>`)[0];
+            popup_2e79bc1b5862480bbf299084fd63711a.setContent(html_98edea02359242a69ed32bee2964fe2c);
+        
+
+        marker_0e8745a792b24d2bb98192fc789bad46.bindPopup(popup_2e79bc1b5862480bbf299084fd63711a)
+        ;
+
+        
+    
+    
+            marker_0e8745a792b24d2bb98192fc789bad46.bindTooltip(
+                `<div>
+                     Padrao dos Descobrimentos (monument to the discoveries)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c81d95a53864868b1ab6cdc3a4d6acc = L.marker(
+                [38.728288, -9.152672],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_9692438f0cfa440d8b7eb77291fa8dc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0c81d95a53864868b1ab6cdc3a4d6acc.setIcon(icon_9692438f0cfa440d8b7eb77291fa8dc4);
+        
+    
+        var popup_f73b29ea731b403192a620711a454912 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a31a22aca1e4cbea2c7dde5d01adb94 = $(`<div id="html_9a31a22aca1e4cbea2c7dde5d01adb94" style="width: 100.0%; height: 100.0%;">Parque Eduardo VII</div>`)[0];
+            popup_f73b29ea731b403192a620711a454912.setContent(html_9a31a22aca1e4cbea2c7dde5d01adb94);
+        
+
+        marker_0c81d95a53864868b1ab6cdc3a4d6acc.bindPopup(popup_f73b29ea731b403192a620711a454912)
+        ;
+
+        
+    
+    
+            marker_0c81d95a53864868b1ab6cdc3a4d6acc.bindTooltip(
+                `<div>
+                     Parque Eduardo VII
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a18e34957bce46348697656af165af6c = L.marker(
+                [38.754442, -9.188436],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_cdf9df0cbf7a4a3785d6ce0342afec0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "euro", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_a18e34957bce46348697656af165af6c.setIcon(icon_cdf9df0cbf7a4a3785d6ce0342afec0f);
+        
+    
+        var popup_955d62aa05474993800c8c34ba723d9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b25eaa289e2245169473b2918be045bd = $(`<div id="html_b25eaa289e2245169473b2918be045bd" style="width: 100.0%; height: 100.0%;">Centro Colombo</div>`)[0];
+            popup_955d62aa05474993800c8c34ba723d9c.setContent(html_b25eaa289e2245169473b2918be045bd);
+        
+
+        marker_a18e34957bce46348697656af165af6c.bindPopup(popup_955d62aa05474993800c8c34ba723d9c)
+        ;
+
+        
+    
+    
+            marker_a18e34957bce46348697656af165af6c.bindTooltip(
+                `<div>
+                     Centro Colombo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11b89fb07d1a4df18180ae24c5e3fdfb = L.marker(
+                [38.711633, -9.130312],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_e6c772afbbdb499981a0a51141597924 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "globe", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_11b89fb07d1a4df18180ae24c5e3fdfb.setIcon(icon_e6c772afbbdb499981a0a51141597924);
+        
+    
+        var popup_c0e9c74bf7b44d2ab317ccff1f253fb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba08f8223ab64274a6e180809daee25a = $(`<div id="html_ba08f8223ab64274a6e180809daee25a" style="width: 100.0%; height: 100.0%;">Miradouro de Santa Luzia</div>`)[0];
+            popup_c0e9c74bf7b44d2ab317ccff1f253fb3.setContent(html_ba08f8223ab64274a6e180809daee25a);
+        
+
+        marker_11b89fb07d1a4df18180ae24c5e3fdfb.bindPopup(popup_c0e9c74bf7b44d2ab317ccff1f253fb3)
+        ;
+
+        
+    
+    
+            marker_11b89fb07d1a4df18180ae24c5e3fdfb.bindTooltip(
+                `<div>
+                     Miradouro de Santa Luzia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22d3427a2103412788f3e909b62c29c1 = L.marker(
+                [38.758027, -9.037465],
+                {}
+            ).addTo(map_5751623452034b6b8fe2ea76163247e5);
+        
+    
+            var icon_f6ca914aca984ea1aaaac12dca55e7b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "picture", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_22d3427a2103412788f3e909b62c29c1.setIcon(icon_f6ca914aca984ea1aaaac12dca55e7b9);
+        
+    
+        var popup_02b0b4f88df840b7983d64de79fd553b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdfd0ad5e89f40a68d61850b5c4c5ca0 = $(`<div id="html_cdfd0ad5e89f40a68d61850b5c4c5ca0" style="width: 100.0%; height: 100.0%;">Vasco da Gama Bridge</div>`)[0];
+            popup_02b0b4f88df840b7983d64de79fd553b.setContent(html_cdfd0ad5e89f40a68d61850b5c4c5ca0);
+        
+
+        marker_22d3427a2103412788f3e909b62c29c1.bindPopup(popup_02b0b4f88df840b7983d64de79fd553b)
+        ;
+
+        
+    
+    
+            marker_22d3427a2103412788f3e909b62c29c1.bindTooltip(
+                `<div>
+                     Vasco da Gama Bridge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
