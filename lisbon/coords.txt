@@ -23,3 +23,7 @@
 38.754442, -9.188436, euro, lightgreen, "Centro Colombo"
 38.711633, -9.130312, globe, lightblue, "Miradouro de Santa Luzia"
 38.758027, -9.037465, picture, red, "Vasco da Gama Bridge"
+38.715255, -9.144178, globe, lightblue, "Miradouro de São Pedro de Alcântara"
+38.780593, -9.499747, tint, cadetblue, "Cape Roca (Epic View)"
+38.790700, -9.492670, tint, cadetblue, "Praia da Ursa (Beach)"
+38.803247, -9.485598, tint, cadetblue, "Praia da Adraga (Beach)"
