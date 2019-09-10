@@ -29,7 +29,7 @@ for coord_info in coordinates:
     description = coord_info["description"]
     folium.Marker(coord_info["coordinate"],
                   icon=folium.Icon(icon=coord_info["icon"], color=coord_info["color"]),
-                  tooltip=description, popup=description).add_to(map)
+                  tooltip=description).add_to(map)
 
 # Generate map
 map.save(target + f"/{target}.html")
