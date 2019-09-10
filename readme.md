@@ -10,7 +10,7 @@ Dependencies: folium (python implementation of leaflet.js)
 4. In this file you can add the landmarks you would like to visit during your citytrip.
 5. Use the following format: *latitude*, *longitude*, *(glyph)icon*, *marker color*, *title (in double quotes)*
 
-Example for Lisbon below:
+Example for Lisbon `coords.txt` below:
 
 `38.691659, -9.216031, tower, red, "Torre de Belém"`
 
